@@ -6,7 +6,7 @@
 /*   By: ehafiane <ehafiane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 19:57:32 by ehafiane          #+#    #+#             */
-/*   Updated: 2024/10/06 21:20:25 by ehafiane         ###   ########.fr       */
+/*   Updated: 2024/10/06 22:19:20 by ehafiane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,19 +42,16 @@ void	init_content(t_philo *philo, int ac, char **av)
 	philo->next = NULL;
 }
 
-void	fill_nodes(t_philo **philo, int ac, char **av)
+void	fill_nodes(t_philo **philo, int nb_philos, int ac, char **av)
 {
 	t_philo	*tmp;
 	int		i;
 
-	i = 1;
-	while (i < ac)
+	i = 0;
+	while (i < nb_philos)
 	{
-		tmp = ft_lstnew(ac, av);
-		if (!tmp)
-			return ;
-		ft_lstadd_back(philo, tmp);
-		tmp->id = i;
+		ft_lstadd_back((philo), ft_lstnew(ac, av));
+		ft_lstlast(*philo)->id = i + 1;
 		i++;
 	}
 }

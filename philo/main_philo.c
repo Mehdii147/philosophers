@@ -6,7 +6,7 @@
 /*   By: ehafiane <ehafiane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 21:19:26 by ehafiane          #+#    #+#             */
-/*   Updated: 2024/10/06 21:19:28 by ehafiane         ###   ########.fr       */
+/*   Updated: 2024/10/06 22:18:48 by ehafiane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,7 +108,7 @@ int	main(int ac, char **av)
 	nb_philos = ft_atoi(av[1]);
 	if (check_for_valid_args(ac, av))
 		return (1);
-	fill_nodes(&philo, ac, av);
+	fill_nodes(&philo, nb_philos, ac, av);
 	ft_lstlast(philo)->next = philo;
 	create_philos(philo);
 	return (0);

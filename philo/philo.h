@@ -6,7 +6,7 @@
 /*   By: ehafiane <ehafiane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 19:58:47 by ehafiane          #+#    #+#             */
-/*   Updated: 2024/10/06 20:12:35 by ehafiane         ###   ########.fr       */
+/*   Updated: 2024/10/06 22:15:17 by ehafiane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ typedef struct s_philo
 }						t_philo;
 
 int				check_for_valid_args(int ac, char **argv);
-void			fill_nodes(t_philo **philo, int ac, char **av);
+void			fill_nodes(t_philo **philo, int nb_philos, int ac, char **av);
 t_philo			*ft_lstlast(t_philo *lst);
 t_philo			*ft_lstnew(int ac, char **av);
 void			ft_lstadd_front(t_philo **lst, t_philo *new);
