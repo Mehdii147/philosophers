@@ -6,7 +6,7 @@
 /*   By: ehafiane <ehafiane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 21:19:26 by ehafiane          #+#    #+#             */
-/*   Updated: 2024/10/06 22:18:48 by ehafiane         ###   ########.fr       */
+/*   Updated: 2024/10/07 13:20:42 by ehafiane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,10 +58,11 @@ void	if_died(t_philo *philo)
 		{
 			pthread_mutex_lock(philo->print);
 			printf("%zu	%d died\n", current_var(philo->current), philo->id);
+			pthread_mutex_unlock(&(philo)->eat);
 			return ;
 		}
 		pthread_mutex_unlock(&(philo)->eat);
-		usleep(400);
+		usleep(500);
 		philo = philo->next;
 	}
 }

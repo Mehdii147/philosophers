@@ -6,7 +6,7 @@
 /*   By: ehafiane <ehafiane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 19:58:47 by ehafiane          #+#    #+#             */
-/*   Updated: 2024/10/06 22:15:17 by ehafiane         ###   ########.fr       */
+/*   Updated: 2024/10/07 13:21:49 by ehafiane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ int				ft_msleep(t_philo *philo, size_t t_todo);
 int				check_eating(t_philo *philo);
 int				parsing(char **av);
 long			ft_atoi(char *str);
+void			if_died(t_philo *philo);
 int				check_nb_arg(int ac);
 
 #endif

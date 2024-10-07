@@ -6,7 +6,7 @@
 /*   By: ehafiane <ehafiane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 19:48:44 by ehafiane          #+#    #+#             */
-/*   Updated: 2024/10/06 19:48:47 by ehafiane         ###   ########.fr       */
+/*   Updated: 2024/10/07 13:21:26 by ehafiane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int	ft_msleep(t_philo *philo, size_t t_todo)
 	{
 		if (current_var(philo->current) - time >= t_todo)
 			return (1);
-		usleep(50);
+		usleep(500);
 	}
 	return (0);
 }
