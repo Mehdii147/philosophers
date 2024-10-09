@@ -6,7 +6,7 @@
 /*   By: ehafiane <ehafiane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 19:57:32 by ehafiane          #+#    #+#             */
-/*   Updated: 2024/10/06 22:19:20 by ehafiane         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:45:22 by ehafiane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,6 @@ void	init_content(t_philo *philo, int ac, char **av)
 
 void	fill_nodes(t_philo **philo, int nb_philos, int ac, char **av)
 {
-	t_philo	*tmp;
 	int		i;
 
 	i = 0;

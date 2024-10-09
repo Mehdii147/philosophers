@@ -6,7 +6,7 @@
 /*   By: ehafiane <ehafiane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 21:19:26 by ehafiane          #+#    #+#             */
-/*   Updated: 2024/10/07 13:20:42 by ehafiane         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:45:15 by ehafiane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,7 @@ int	main(int ac, char **av)
 		return (printf("Error: wrong number of arguments"), 1);
 	philo = NULL;
 	nb_philos = ft_atoi(av[1]);
-	if (check_for_valid_args(ac, av))
+	if (check_for_valid_args(av))
 		return (1);
 	fill_nodes(&philo, nb_philos, ac, av);
 	ft_lstlast(philo)->next = philo;

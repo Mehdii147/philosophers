@@ -6,7 +6,7 @@
 /*   By: ehafiane <ehafiane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 21:19:35 by ehafiane          #+#    #+#             */
-/*   Updated: 2024/10/06 22:52:55 by ehafiane         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:44:56 by ehafiane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	check_arg_syntax(char *av)
 	return (1);
 }
 
-int	check_for_valid_args(int ac, char **argv)
+int	check_for_valid_args(char **argv)
 {
 	if (ft_atoi(argv[1]) > 200 || ft_atoi(argv[1]) <= 0
 		|| check_arg_syntax(argv[1]) == 1)
